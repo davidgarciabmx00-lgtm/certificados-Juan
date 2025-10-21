@@ -6,6 +6,7 @@ body {
   padding: 0;
 }
 
+/* ---------- HEADER ---------- */
 header {
   background: #273c75;
   color: white;
@@ -13,12 +14,62 @@ header {
   padding: 2rem 1rem;
 }
 
-header h1 {
-  margin-bottom: 0.5rem;
+.foto-perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: none;
+  box-shadow: none;
 }
 
-.certificados {
-  max-width: 700px;
+header h1 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.motivacion p {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #dcdde1;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- NAV ---------- */
+nav {
+  background: #192a56;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- SECCIONES ---------- */
+section {
+  max-width: 800px;
   margin: 2rem auto;
   background: white;
   padding: 2rem;
@@ -26,32 +77,50 @@ header h1 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.certificados h2 {
+section h2 {
   color: #192a56;
+  margin-bottom: 1rem;
 }
 
-.certificados ul {
+/* ---------- LISTAS DE ENLACES ---------- */
+ul {
   list-style: none;
   padding: 0;
 }
 
-.certificados li {
+li {
   margin: 1rem 0;
 }
 
-.certificados a {
+a {
   color: #0097e6;
   text-decoration: none;
   font-weight: bold;
 }
 
-.certificados a:hover {
+a:hover {
   text-decoration: underline;
 }
 
+/* ---------- GALERÍA MULTIMEDIA ---------- */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.galeria img, .galeria video {
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* ---------- FOOTER ---------- */
 footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
   color: #718093;
+  background: #f1f2f6;
 }
